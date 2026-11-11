@@ -1,0 +1,9 @@
+# Publish only the static website and its documentation.
+/*
+!/.gitignore
+!/index.html
+!/style.css
+!/script.js
+!/assets/
+!/.nojekyll
+!/README.md
