@@ -455,3 +455,8 @@ html:not(.menu-ready) .institution{position:relative;inset:auto}
  .logo-divider{width:1px;height:30px}
  .hero{min-height:0}
 }
+/* Bring the mobile project title closer to the institution logos. */
+@media(max-width:600px){
+ .institution{padding-bottom:8px}
+ .hero-content{padding-top:16px;margin-top:0}
+}
