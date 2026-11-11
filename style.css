@@ -445,3 +445,13 @@ html:not(.menu-ready) .institution{position:relative;inset:auto}
  .logo-divider{height:32px}
 }
 @media(max-width:360px){.brand-logos{gap:8px}.university-logo{width:90px}.logo-divider{height:28px}}
+/* Match logo symbol heights using each image's original aspect ratio. */
+@media(max-width:600px){
+ body{padding-top:0}
+ .institution{position:relative;inset:auto;height:auto;min-height:0;padding:14px 16px}
+ .brand-logos{display:grid;grid-template-columns:1.9fr 1px 3.5fr;align-items:center;width:100%;gap:9px}
+ .university-logo,.faculty-logo{display:block;width:100%;max-width:none;min-width:0;height:auto}
+ .university-logo{flex-shrink:1}
+ .logo-divider{width:1px;height:30px}
+ .hero{min-height:0}
+}
