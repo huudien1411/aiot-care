@@ -470,3 +470,9 @@ html:not(.menu-ready) .institution{position:relative;inset:auto}
 .model-descriptions>li>p{margin:0}
 @media(max-width:850px){.model-descriptions .model-item-heading{gap:12px}.model-descriptions .model-item-number{flex-basis:42px;font-size:36px}.model-descriptions .model-room{font-size:13px}.model-descriptions .model-title-group h3{font-size:18px}}
 @media(max-width:600px){.model-descriptions>li{gap:15px}.model-descriptions .model-item-heading{min-height:0;gap:14px}.model-descriptions .model-item-number{flex-basis:46px;font-size:40px}.model-descriptions .model-room{font-size:14px}.model-descriptions .model-title-group h3{font-size:20px}}
+/* Balance specification labels with their numbers. */
+.system-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.system-facts>p{align-items:center;text-align:center;gap:12px;min-width:0}
+.system-facts strong{font-size:clamp(46px,4.2vw,58px);font-weight:650;line-height:1.1}
+.system-facts span{font-size:15px;font-weight:750;line-height:1.5;letter-spacing:.2px;text-transform:uppercase;color:#173A78;max-width:190px}
+@media(max-width:600px){.system-facts{gap:12px}.system-facts>p{gap:9px}.system-facts strong{font-size:43px}.system-facts span{font-size:12px;line-height:1.45;letter-spacing:0}}
