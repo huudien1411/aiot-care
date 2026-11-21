@@ -476,3 +476,9 @@ html:not(.menu-ready) .institution{position:relative;inset:auto}
 .system-facts strong{font-size:clamp(46px,4.2vw,58px);font-weight:650;line-height:1.1}
 .system-facts span{font-size:15px;font-weight:750;line-height:1.5;letter-spacing:.2px;text-transform:uppercase;color:#173A78;max-width:190px}
 @media(max-width:600px){.system-facts{gap:12px}.system-facts>p{gap:9px}.system-facts strong{font-size:43px}.system-facts span{font-size:12px;line-height:1.45;letter-spacing:0}}
+/* Keep each fact label on one line within its column. */
+.system-facts{gap:12px}
+.system-facts span{white-space:nowrap;max-width:none;font-size:clamp(10px,1.02vw,14px);letter-spacing:0}
+@media(max-width:1100px) and (min-width:851px){.system-facts{gap:8px}.system-facts span{font-size:10px}}
+@media(max-width:850px){.system-facts span{font-size:clamp(9px,1.85vw,13px)}}
+@media(max-width:600px){.system-facts{gap:6px}.system-facts span{font-size:clamp(7px,2.05vw,12px)}}
