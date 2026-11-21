@@ -460,3 +460,13 @@ html:not(.menu-ready) .institution{position:relative;inset:auto}
  .institution{padding-bottom:8px}
  .hero-content{padding-top:16px;margin-top:0}
 }
+/* Keep each room label and node title in one compact heading group. */
+.model-descriptions>li{display:flex;flex-direction:column;gap:18px;min-width:0}
+.model-descriptions .model-item-heading{display:flex;align-items:center;gap:16px;margin:0;min-height:58px}
+.model-descriptions .model-item-number{flex:0 0 48px;align-self:center;font-size:42px;line-height:1;padding:0}
+.model-title-group{display:flex;flex-direction:column;gap:4px;min-width:0}
+.model-descriptions .model-room{display:block;font-size:14px;font-weight:650;line-height:1.35;letter-spacing:.1px;margin:0;color:#536580}
+.model-descriptions .model-title-group h3{font-size:20px;line-height:1.35;min-height:0;margin:0;padding:0;letter-spacing:-.3px}
+.model-descriptions>li>p{margin:0}
+@media(max-width:850px){.model-descriptions .model-item-heading{gap:12px}.model-descriptions .model-item-number{flex-basis:42px;font-size:36px}.model-descriptions .model-room{font-size:13px}.model-descriptions .model-title-group h3{font-size:18px}}
+@media(max-width:600px){.model-descriptions>li{gap:15px}.model-descriptions .model-item-heading{min-height:0;gap:14px}.model-descriptions .model-item-number{flex-basis:46px;font-size:40px}.model-descriptions .model-room{font-size:14px}.model-descriptions .model-title-group h3{font-size:20px}}
